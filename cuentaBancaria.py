@@ -36,7 +36,7 @@ class cuentaBancaria:
             x.mostrar_info_cuenta()
 
 
-class Usuario:
+class Usuario():
 
     usuarios=[]
 
