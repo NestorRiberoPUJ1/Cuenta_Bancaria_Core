@@ -4,7 +4,7 @@ class cuentaBancaria:
     def __init__(self, balance=0, interes=1):
         self.balance = balance
         self.interes = interes/100
-        self.instances.append(self)
+        cuentaBancaria.instances.append(self)
 
     def deposito(self, amount):
         self.balance += amount
@@ -45,7 +45,7 @@ class Usuario:
         self.email = email
         self.cuentas = {}
         self.cuentas.update(cuentas)
-        self.usuarios.append(self)
+        Usuario.usuarios.append(self)
 
     def hacer_deposito(self, amount,cuenta):
         self.cuentas[cuenta].deposito(amount)
