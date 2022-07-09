@@ -56,3 +56,6 @@ class Usuario():
     def mostrarBalance(self,cuenta):
         print(f"{self.name}, Balance {cuenta}: ${self.cuentas[cuenta].mostrar_info_cuenta()}")
         return self
+
+bac=cuentaBancaria()
+bac.mostrar_info_cuenta()

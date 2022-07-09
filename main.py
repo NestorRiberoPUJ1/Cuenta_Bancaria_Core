@@ -17,3 +17,7 @@ John.mostrarBalance("Ahorros")
 
 John.cuentas["Ahorros"].generar_interes()
 John.mostrarBalance("Ahorros")
+
+John.hacer_retiro(1000,"Corriente")
+John.cuentas["Corriente"].generar_interes()
+John.mostrarBalance("Corriente")
